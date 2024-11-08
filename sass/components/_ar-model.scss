@@ -1,0 +1,93 @@
+@use '../abstracts/variables' as v;
+
+
+model-viewer {
+    width: auto;
+    max-width: 1200px;
+    height: 700px;
+    background-color: #fff;
+    margin: auto;
+}
+
+
+.Hotspot {
+  border: 2px solid;
+  border-radius: 30px;
+  border-color: rgb(210, 210, 210);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 8px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+  font-family: v.$heading-font-family;
+}
+
+.Hotspot:hover {
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    border-radius: 50px;
+}
+
+.Hotspot:not([data-visible]) {
+  opacity: 0;
+}
+  
+.Hotspot:focus {
+    border: 4px solid v.$accent-color;
+    height: 32px;
+    outline: none;
+    width: 32px;
+}
+
+//free to syle this
+.HotspotAnnotation{
+    //hidden your text box
+    visibility: hidden;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    // font-family: ;
+    left: calc(100% + 1em);
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 50%;
+    width: max-content;
+}
+
+.HotspotAnnotation p {
+    color: #333;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.HotspotAnnotation h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 412px) {
+    .Hotspot {
+        display: none;
+    }
+
+    #x-ray-images {
+        display: block;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .Hotspot {
+        display: block;
+    }
+
+    #x-ray-images {
+        display: none;
+    }
+}
