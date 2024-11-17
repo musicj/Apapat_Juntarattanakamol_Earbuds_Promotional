@@ -1,4 +1,22 @@
 (() => {
+  const menu = document.querySelector("#menu-overlay");
+  const hamburger = document.querySelector("#hamburger");
+  const closeButton = document.querySelector("#close");
+  const menuLinks = document.querySelectorAll("#menu-overlay ul a"); 
+
+  function toggleMenu() {
+      menu.classList.toggle("open");
+  }
+
+  hamburger.addEventListener("click", toggleMenu);
+  closeButton.addEventListener("click", toggleMenu);
+
+  menuLinks.forEach(link => {
+      link.addEventListener("click", toggleMenu);
+  });
+})();
+
+(() => {
 
     const model = document.querySelector("#model");
     const hotspots = document.querySelectorAll(".Hotspot");
