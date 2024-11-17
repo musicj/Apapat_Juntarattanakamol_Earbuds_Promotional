@@ -31,12 +31,32 @@
     
 
     <main>
-        <!-- banner -->
-        <section class="image-container">
-            <img src="images/hero-banner.jpg" alt="All colors pf earbuds">
+        <!-- Video banner -->
+        <section class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="videos/banner-promotional.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <p class="banner-text">Shine And Bright</p>
         </section>
+        
 
+        <section class="earbuds-container">
+            <div class="earbud-card">
+                <img src="images/earbud01.png" alt="Earbud 1">
+                <p>White</p>
+            </div>
+            <div class="earbud-card">
+                <img src="images/earbud02.png" alt="Earbud 2">
+                <p>Black</p>
+            </div>
+            <div class="earbud-card">
+                <img src="images/earbud03.png" alt="Earbud 3">
+                <p>Grey</p>
+            </div>
+        </section>        
+
+        <!-- Hotspot -->
         <section>
         <model-viewer id="model" src="model/AR.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
 

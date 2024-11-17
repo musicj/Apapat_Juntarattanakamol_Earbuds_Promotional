@@ -14,6 +14,7 @@
   menuLinks.forEach(link => {
       link.addEventListener("click", toggleMenu);
   });
+  
 })();
 
 (() => {
