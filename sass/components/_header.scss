@@ -1,0 +1,26 @@
+header {
+    padding: 20px 30px 20px 30px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+#menu-container {
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+}
