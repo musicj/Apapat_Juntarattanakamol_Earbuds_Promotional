@@ -15,8 +15,10 @@ Open index.html in the browser of your choice.
 5. Submit a pull request :D
 
 ## History
-Nov 6th, 2024
-Nov 7th, 2024
+- Nov 6th, 2024
+- Nov 7th, 2024
+- Nov 16th, 2024
+- Nov 17th, 2024
 
 ## Credits
 Apapat Juntarattanakamol
