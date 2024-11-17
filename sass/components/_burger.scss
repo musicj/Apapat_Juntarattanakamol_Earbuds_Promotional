@@ -1,33 +1,6 @@
-header {
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.457);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-}
-
-#menu-container {
-    display: flex;
-    width: 96%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#logo {
-    font-size: 24px;
-    color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
-    text-decoration: none; 
-}
-
 #logo,
 nav a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -42,15 +15,11 @@ nav {
     font-size: 32px;
     background: none;
     border: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
+    margin-left: 15px;
 }
 
-#hamburger:hover {
-    background-color: #ffffff5f;
-    width: 40px;
-    border-radius: 20px;
-}
 
 .overlay {
     display: none;
@@ -69,13 +38,14 @@ nav {
 
 .overlay.open {
     display: flex;
+    margin-right: 16px;
 }
 
 #close {
     position: absolute;
+    margin-right: 16px;
     top: 20px;
     right: 20px;
-    font-size: 32px;
     color: white;
     cursor: pointer;
 }
