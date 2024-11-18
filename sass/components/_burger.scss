@@ -1,4 +1,3 @@
-/* Default styles for 412px to 768px (and above by default) */
 #logo,
 nav a {
     color: rgb(255, 255, 255);
@@ -12,7 +11,6 @@ nav {
     align-items: center;
 }
 
-/* Hamburger and close button (for smaller screens) */
 #hamburger, #close {
     font-size: 32px;
     background: none;
@@ -22,7 +20,6 @@ nav {
     margin-left: 15px;
 }
 
-/* Overlay styles for mobile screens */
 .overlay {
     display: none;
     position: fixed; 
@@ -37,13 +34,11 @@ nav {
     z-index: 1000; 
 }
 
-/* Overlay when active (on small screens) */
 .overlay.open {
     display: flex;
     margin-right: 16px;
 }
 
-/* Close button inside the overlay */
 #close {
     position: absolute;
     margin-right: 16px;
@@ -53,7 +48,6 @@ nav {
     cursor: pointer;
 }
 
-/* Overlay links styles */
 .overlay ul {
     list-style-type: none;
     text-align: center;
@@ -73,15 +67,13 @@ nav {
     color: #2e3ecd;
 }
 
-
-/* Media query for screens 412px to 768px (default behavior) */
 @media screen and (min-width: 412px) {
     nav {
-        display: block; /* Hide default nav for small screens */
+        display: block;
     }
 
     #hamburger {
-        display: block; /* Show hamburger menu */
+        display: block;
     }
 
     .overlay {
@@ -97,21 +89,18 @@ nav {
     }
 }
 
-
 @media screen and (min-width: 1200px) {
     #menu-container {
         display: flex;
-        justify-content: space-between; /* Distribute space between logo and nav */
+        justify-content: space-between;
         align-items: center;
         width: 100%;
     }
 
-    /* Logo stays on the left */
     #logo {
-        margin-right: auto; /* Push logo to the left side */
+        margin-right: auto;
     }
 
-    /* Hide hamburger and overlay for larger screens */
     .overlay {
         display: none; 
     }
@@ -125,14 +114,12 @@ nav {
         font-size: 18px; 
     }
 
-    /* Align Buy button and dt-nav to the right */
     #dt-nav {
         display: flex;
-        justify-content: flex-end; /* Align right */
-        align-items: center; /* Vertically center the items */
+        justify-content: flex-end;
+        align-items: center;
     }
 
-    /* Make #dt-nav ul horizontal */
     #dt-nav nav ul {
         display: flex;
         list-style: none;
@@ -141,32 +128,29 @@ nav {
     }
 
     #dt-nav nav ul li {
-        margin-left: 20px; /* Space between list items */
+        margin-left: 20px;
 
         a {
             text-decoration: none;
             color: white;
-            transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+            transition: color 0.3s ease, background-color 0.3s ease;
         }
 
-        /* Specific styling for the Buy button */
         &#buy-container {
             a {
-                background-color: #2e3ecd; /* Blue background for the Buy button */
-                padding: 5px 15px; /* Padding for the button */
-                border-radius: 30px; /* Rounded edges */
+                background-color: #2e3ecd;
+                padding: 5px 15px;
+                border-radius: 30px;
             }
 
-            /* Hover effect for the Buy button */
             a:hover {
-                background-color: rgb(14, 14, 155); /* Change background on hover */
-                color: white; /* Keep text white */
+                background-color: rgb(14, 14, 155);
+                color: white;
             }
         }
     }
 
-    /* Hover effect for other menu items */
     #dt-nav nav ul li a:hover {
-        color: #2e3ecd; /* Change text color on hover */
+        color: #2e3ecd;
     }
 }

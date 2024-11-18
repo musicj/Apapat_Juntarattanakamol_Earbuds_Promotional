@@ -1,0 +1,25 @@
+#explode-view {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 412px) {
+
+    #explode-container {
+      display: none;
+    }
+    
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+    #explode-container {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+  
+    #explode-container {
+      display: block;
+    }
+  }

@@ -5,7 +5,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
-    width: 100%; /* Ensure full width */
+    width: 100%; 
     box-sizing: border-box;
 }
 
@@ -13,8 +13,8 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Limit the container to a max-width of 1200px */
-    margin: 0 auto; /* Center the container */
+    max-width: 1200px;
+    margin: 0 auto; 
     align-items: center;
 }
 
