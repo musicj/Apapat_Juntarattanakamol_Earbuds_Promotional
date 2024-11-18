@@ -19,6 +19,7 @@ Open index.html in the browser of your choice.
 - Nov 7th, 2024
 - Nov 16th, 2024
 - Nov 17th, 2024
+- Nov 18th, 2024
 
 ## Credits
 Apapat Juntarattanakamol
