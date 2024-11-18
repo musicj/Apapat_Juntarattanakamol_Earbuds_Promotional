@@ -2,9 +2,9 @@
 
 
 model-viewer {
+    padding: 100px;
     width: auto;
-    max-width: 1200px;
-    height: 700px;
+    height: 500px;
     background-color: #fff;
     margin: auto;
 }
@@ -75,19 +75,11 @@ model-viewer {
     .Hotspot {
         display: none;
     }
-
-    #x-ray-images {
-        display: block;
-    }
 }
 
 
 @media (min-width: 768px) {
     .Hotspot {
         display: block;
-    }
-
-    #x-ray-images {
-        display: none;
     }
 }
