@@ -54,25 +54,34 @@
         </section>
         
 
+        <!-- Earbuds Colors -->
         <section class="earbuds-container">
             <div class="earbud-card">
-                <img src="images/earbud01.png" alt="Earbud 1">
-                <p>White</p>
+                <img src="images/earbud01.png" alt="Earbud White">
+                <p>Frosted Pearl</p>
+                <button class="buy-button">Buy</button>
             </div>
             <div class="earbud-card">
-                <img src="images/earbud02.png" alt="Earbud 2">
-                <p>Black</p>
+                <img src="images/earbud02.png" alt="Earbud Black">
+                <p>Midnight Onyx</p>
+                <button class="buy-button">Buy</button>
             </div>
             <div class="earbud-card">
-                <img src="images/earbud03.png" alt="Earbud 3">
-                <p>Grey</p>
+                <img src="images/earbud03.png" alt="Earbud Grey">
+                <p>Silver Stone</p>
+                <button class="buy-button">Buy</button>
             </div>
-        </section>    
+        </section>
+        
+           
         
         <!-- X-RAY -->
-        <section>
+        <section class="x-ray">
             <div class="col-span-full">
-                <section><p>Chips</p></section>
+                <section id="title-x-ray">
+                    <p>See-Through The Sound</p>
+                </section>
+
                 <section id="mobile-tablet-view">
                     <img src="images/earbud-x-ray.jpg" alt="x-ray view of the earbud">
                     <img src="images/earbud.jpg" alt="Textured view of earbud">
@@ -84,11 +93,15 @@
                     </div>
                     <input type="range" min="0" max="100" value="50" id="slider">
                 </div>
+
+                <section id="ar-details">
+                    <p>swipe the button</p>
+                </section>
             </div>
         </section>
 
+        <!-- Info Boxes -->
         <section class="info-boxes">
-            <!-- New Section for Icons and Information -->
             <div id="info-boxes">
                 <div class="info-box">
                     <img src="images/icon-02.png" alt="Icon 1">
@@ -108,50 +121,60 @@
             </div>
         </section>
         
-
-
+        <!-- Explode View -->
+        <div id="explode-container">
+            <canvas id="explode-view"></canvas> 
+        </div>
         
         <!-- Hotspot -->
         <section>
-        <model-viewer id="model" src="model/AR.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+            <section id="title-hotspot">
+                <p id="title">360° View</p>
+                <p id="details-text">Get Closer to the Details</p>
+            </section>                           
 
-            <button class="Hotspot" slot="hotspot-1" data-position="-0.42107413743910194m 0.6808146615248165m 0.3243634626939538m" data-normal="0.5178562322124313m 0.8507099489914437m -0.09009719998823351m" data-visibility-attribute="visible">
-                <div id="hotspot-1" class="HotspotAnnotation">
-                </div>
-            </button><button class="Hotspot" slot="hotspot-2" data-position="-0.1705108752461455m 0.43913510496541214m 0.3945029929560736m" data-normal="0.7558890764682977m 0.5660796825947935m 0.32891563816468444m" data-visibility-attribute="visible">
-                <div id="hotspot-2" class="HotspotAnnotation">
-                </div>
-            </button><button class="Hotspot" slot="hotspot-3" data-position="-0.7920317754453975m 0.2537861687257643m 0.4147152606880174m" data-normal="0.3241632100820774m -0.5838014278846413m 0.7443749767618046m" data-visibility-attribute="visible">
-                <div id="hotspot-3" class="HotspotAnnotation">
-                </div>
-            </button><button class="Hotspot" slot="hotspot-4" data-position="-0.9696032668007784m 0.36684726169178655m 0.2280620542426444m" data-normal="-0.6282742427010404m 0.7391312492894851m -0.2428095391087409m" data-visibility-attribute="visible">
-                <div id="hotspot-4" class="HotspotAnnotation">
-                </div>
-            </button><button class="Hotspot" slot="hotspot-5" data-position="-0.6994404944668656m 0.7657721731736225m 0.5243485386859231m" data-normal="0.32271764760995225m 0.8158930263465732m 0.4797623260325146m" data-visibility-attribute="visible">
-                <div id="hotspot-5"  class="HotspotAnnotation"> 
-                </div>
-            </button><button class="Hotspot" slot="hotspot-6" data-position="-0.4345278000295695m 0.4966060562936768m 0.6335268633121973m" data-normal="0.5011943305833986m 0.5137314476754145m 0.6963362999732113m" data-visibility-attribute="visible">
-                <div id="hotspot-6" class="HotspotAnnotation">
-                </div>
-            </button>
-            <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
-            </div>
-            <button slot="ar-button" id="ar-button">
-                View in your space
-            </button>
-            <div id="ar-prompt">
-                <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-            </div>
-        </model-viewer>
+            <model-viewer id="model" src="model/AR.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
 
-        <div id="x-ray-images">
-            <img src="images/earbuds_functions.png" alt="earbuds functions" height="412px">
-        </div>
-    </section>
+                <button class="Hotspot" slot="hotspot-1" data-position="-0.42107413743910194m 0.6808146615248165m 0.3243634626939538m" data-normal="0.5178562322124313m 0.8507099489914437m -0.09009719998823351m" data-visibility-attribute="visible">
+                    <div id="hotspot-1" class="HotspotAnnotation">
+                    </div>
+                </button><button class="Hotspot" slot="hotspot-2" data-position="-0.1705108752461455m 0.43913510496541214m 0.3945029929560736m" data-normal="0.7558890764682977m 0.5660796825947935m 0.32891563816468444m" data-visibility-attribute="visible">
+                    <div id="hotspot-2" class="HotspotAnnotation">
+                    </div>
+                </button><button class="Hotspot" slot="hotspot-3" data-position="-0.7920317754453975m 0.2537861687257643m 0.4147152606880174m" data-normal="0.3241632100820774m -0.5838014278846413m 0.7443749767618046m" data-visibility-attribute="visible">
+                    <div id="hotspot-3" class="HotspotAnnotation">
+                    </div>
+                </button><button class="Hotspot" slot="hotspot-4" data-position="-0.9696032668007784m 0.36684726169178655m 0.2280620542426444m" data-normal="-0.6282742427010404m 0.7391312492894851m -0.2428095391087409m" data-visibility-attribute="visible">
+                    <div id="hotspot-4" class="HotspotAnnotation">
+                    </div>
+                </button><button class="Hotspot" slot="hotspot-5" data-position="-0.6994404944668656m 0.7657721731736225m 0.5243485386859231m" data-normal="0.32271764760995225m 0.8158930263465732m 0.4797623260325146m" data-visibility-attribute="visible">
+                    <div id="hotspot-5"  class="HotspotAnnotation"> 
+                    </div>
+                </button><button class="Hotspot" slot="hotspot-6" data-position="-0.4345278000295695m 0.4966060562936768m 0.6335268633121973m" data-normal="0.5011943305833986m 0.5137314476754145m 0.6963362999732113m" data-visibility-attribute="visible">
+                    <div id="hotspot-6" class="HotspotAnnotation">
+                    </div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+            </model-viewer>
+        </section>
+
+        <section id="promo-banner-con">
+            <img src="images/footer-banner.jpg">
+        </section>
+
+
     </main>
 
+    <footer>
+    </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>

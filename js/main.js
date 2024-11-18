@@ -16,13 +16,13 @@
   });
 })();
 
+//x-ray
 (() => {
   const divisor = document.querySelector("#divisor");
   const slider = document.querySelector("#slider");
 
   function moveDivisor() {
     console.log(slider.value);
-    // divisor.computedStyleMap.width = slider.value+"%";
     divisor.style.width = `${slider.value}%`;
   }
 
@@ -87,5 +87,96 @@
     });
   
   })();
+
+//See-through text animation
+(() => {
   
-  
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from("#title-x-ray", {
+    y: 100,               
+    opacity: 0,          
+    duration: 1,          
+    ease: "power2.out",   
+    scrollTrigger: {
+      trigger: "#title-x-ray", 
+      start: "top 90%",        
+      end: "top 20%",          
+      scrub: 3.5,                
+      markers: false          
+    }
+  });
+})();
+
+//explode view
+(() => {
+
+  const canvas = document.querySelector("#explode-view");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 1920;
+  canvas.height = 1080;
+
+  const frameCount = 200; 
+  const images = []; 
+
+
+  for(let i=0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = `images/RockCaseOpen${(i+1).toString().padStart(4, '0')}.webp`;
+      images.push(img);
+  }
+  const buds = {
+      frame: 0
+  }
+
+  gsap.to(buds, {
+      frame: 199,
+      snap: "frame",
+      scrollTrigger: {
+          trigger: "#explode-view",
+          pin: true,
+          scrub: 35,
+          markers: false,
+          start: " top top"
+      },
+      onUpdate: render
+  })
+
+  images[0].addEventListener("load", render)
+
+  function render() {
+      console.log(images[buds.frame]);
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(images[buds.frame], 0, 0);
+  }
+
+})();
+
+//scrolling text
+(() => {
+  // Register ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Create animation for #title-hotspot
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: "#title-hotspot", // Element triggering the animation
+      pin: true,                 // Pin the section during scroll
+      scrub: true,               // Smooth animation based on scroll
+      start: "top top",          // Start when top of section hits top of viewport
+      end: "bottom top",         // End when bottom of section hits top of viewport
+      markers: false             // Enable markers for debugging
+    }
+  })
+    .to("#title", {
+      autoAlpha: 0, // Fade out
+      duration: 1,
+      ease: "power2.out"
+    })
+    .to("#details-text", {
+      autoAlpha: 1, // Fade in
+      duration: 1,
+      ease: "power2.out"
+    }, 0.5); // Start fading in details-text halfway through timeline
+})();
