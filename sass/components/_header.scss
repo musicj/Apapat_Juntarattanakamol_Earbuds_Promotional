@@ -1,19 +1,20 @@
 header {
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px;
     background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 999;
-    width: 100%;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
 }
 
 #menu-container {
     display: flex;
-    width: 96%;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limit the container to a max-width of 1200px */
+    margin: 0 auto; /* Center the container */
     align-items: center;
 }
 
