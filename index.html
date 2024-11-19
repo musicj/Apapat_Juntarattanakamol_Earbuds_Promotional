@@ -17,7 +17,6 @@
             <div id="dt-nav">
                 <nav>
                     <ul>
-                        <li><a href="#home" class="menu-hover">Home</a></li>
                         <li><a href="#about" class="menu-hover">Earbuds</a></li>
                         <li><a href="#services" class="menu-hover">Accessories</a></li>
                         <li><a href="#contact" class="menu-hover">Support</a></li>
@@ -50,23 +49,23 @@
                 <source src="videos/banner-promotional.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p class="banner-text">Shine And Bright</p>
+            <p class="banner-text">Out of the Shadows, <br>Into the Spotlight </p>
         </section>
         
 
         <!-- Earbuds Colors -->
-        <section class="earbuds-container">
-            <div class="earbud-card">
+        <section class="earbuds-container grid-con">
+            <div class="earbud-card col-start-1">
                 <img src="images/earbud01.png" alt="Earbud White">
                 <p>Frosted Pearl</p>
                 <button class="buy-button">Buy</button>
             </div>
-            <div class="earbud-card">
+            <div class="earbud-card col-start-1">
                 <img src="images/earbud02.png" alt="Earbud Black">
                 <p>Midnight Onyx</p>
                 <button class="buy-button">Buy</button>
             </div>
-            <div class="earbud-card">
+            <div class="earbud-card col-start-1">
                 <img src="images/earbud03.png" alt="Earbud Grey">
                 <p>Silver Stone</p>
                 <button class="buy-button">Buy</button>
@@ -76,15 +75,14 @@
            
         
         <!-- X-RAY -->
-        <section class="x-ray">
-            <div class="col-span-full">
+        <section class="x-ray grid-con">
                 <section id="title-x-ray">
                     <p>See-Through The Sound</p>
                 </section>
 
                 <section id="mobile-tablet-view">
                     <img src="images/earbud-x-ray.jpg" alt="x-ray view of the earbud">
-                    <img src="images/earbud.jpg" alt="Textured view of earbud">
+                    <img id="earbud-hidden" src="images/earbud-x-ray-full.jpg" alt="Textured view of earbud">
                 </section>
                 
                 <div id="comparison-con">
@@ -97,29 +95,29 @@
                 <section id="ar-details">
                     <p>swipe the button</p>
                 </section>
-            </div>
         </section>
 
         <!-- Info Boxes -->
-        <section class="info-boxes">
+        <section class="info-boxes grid-con">
             <div id="info-boxes">
-                <div class="info-box">
-                    <img src="images/icon-02.png" alt="Icon 1">
-                    <h3>Connectivity</h3>
-                    <p>Enjoy seamless connectivity with built-in WiFi and Bluetooth for hassle-free pairing with your devices.</p>
-                </div>
-                <div class="info-box">
-                    <img src="images/icon-03.png" alt="Icon 2">
-                    <h3>Hearing Protection</h3>
-                    <p>Protect your hearing with advanced sound technology that reduces harmful noise levels during extended use.</p>
-                </div>
-                <div class="info-box">
-                    <img src="images/icon-01.png" alt="Icon 3">
-                    <h3>Charging</h3>
-                    <p>Charge your earbuds effortlessly with convenient wireless charging, eliminating the need for cables.</p>
-                </div>
+              <div class="info-box col-span-full">
+                <img src="images/icon-02.png" alt="Icon 1">
+                <h3>Connectivity</h3>
+                <p>Enjoy seamless connectivity with built-in WiFi and Bluetooth for hassle-free pairing with your devices.</p>
+              </div>
+              <div class="info-box">
+                <img src="images/icon-03.png" alt="Icon 2">
+                <h3>Hearing Protection</h3>
+                <p>Protect your hearing with advanced sound technology that reduces harmful noise levels during extended use.</p>
+              </div>
+              <div class="info-box">
+                <img src="images/icon-01.png" alt="Icon 3">
+                <h3>Charging</h3>
+                <p>Charge your earbuds effortlessly with convenient wireless charging, eliminating the need for cables.</p>
+              </div>
             </div>
-        </section>
+          </section>
+          
         
         <!-- Explode View -->
         <div id="explode-container">
@@ -163,9 +161,12 @@
             </model-viewer>
         </section>
 
-        <section id="promo-banner-con">
-            <img src="images/footer-banner.jpg">
+        <section class="promo-banner-con">
+            <img id="promo-dt" src="images/footer-banner.jpg" alt="Desktop Banner">
+            <img id="promo-mb" src="images/footer-banner-mobile.jpg" alt="Mobile Banner">
+            <img id="promo-tl" src="images/footer-banner-tablet.jpg" alt="Tablet Banner">
         </section>
+        
 
         <section class="info-boxes">
             <div id="info-boxes">
@@ -183,10 +184,10 @@
               </div>
 
             </div>
-          </section>
+        </section>
           
-          <section class="wireless-container">
-            <div class="wireless-card">
+        <section class="wireless-container grid-con">
+            <div class="wireless-card col-span-full">
                 <img src="images/Wireless-Charger.png" alt="Wireless Charger">
                 <p>Wireless Charger</p>
                 <button class="buy-button">Buy</button>
@@ -200,17 +201,17 @@
         
     </main>
 
+    <!-- footer -->
     <footer>
-        
-        <section>
-            <div id="footer">
+        <section id="footer-content">
+            <div id="footer" class="grid-con">
                 <div id="footer-1" class="footer-nav">
                     <h3>Earbuds</h3>
                     <nav>
                         <ul>
-                            <li><a href="#home" class="menu-hover">White</a></li>
-                            <li><a href="#about" class="menu-hover">Black</a></li>
-                            <li><a href="#services" class="menu-hover">Grey</a></li>
+                            <li><a href="#home" class="menu-hover">Frosted Pearl</a></li>
+                            <li><a href="#about" class="menu-hover">Midnight Onyx</a></li>
+                            <li><a href="#services" class="menu-hover">Silver Stone</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -234,8 +235,14 @@
                     </nav>
                 </div>
             </div>
+            <div id="footer-copyright">
+                © 2024 Your Company Name. All rights reserved.
+            </div>
         </section>
     </footer>
+    
+    
+    
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
