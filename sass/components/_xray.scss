@@ -1,22 +1,118 @@
-#xray {
-  position: relative;
-  aspect-ratio: 16/10;
-  background-image: url(../images/earbud-x-ray.jpg);
-  background-size: cover;
-}
-
-#divisor {
+#ar-details {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../images/earbud-x-ray-full.jpg);
-  background-size: cover;
-  width: 85%;
-  height: 100%;
+  right: 40px; 
+  transform: translateY(-50%);  
+  z-index: 10; 
+  padding: 10px; 
+  color: #333; 
 }
 
 #comparison-con {
   display: none;
+}
+
+
+
+
+@media screen and (min-width: 412px) {
+  #xray {
+    background-image: url(../images/earbud-mobile-x-ray.jpg);
+  }
+
+  #mobile-tablet-view {
+    img:first-child { 
+      display: block;
+    }
+
+    img:last-child {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #ar-details {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #xray {
+    position: relative;
+    aspect-ratio: 16/10;
+    background-image: url(../images/earbud-x-ray.jpg);
+    background-size: cover;
+  }
+  
+  #divisor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/earbud-x-ray-full.jpg);
+    background-size: cover;
+    width: 85%;
+    height: 100%;
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    top: -18px;
+    left: -2%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 102%;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-moz-range-track {
+    height: 15px;
+    width: 98%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    outline: none;
+  }
+
+  input[type=range]:active {
+    border: none;
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 15px;
+    background: #fff;
+    border-radius: 0;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 15px;
+    background: #fff;
+    border-radius: 0;
+  }
+
+  input[type=range]:focus::-webkit-slider-thumb {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  input[type=range]:focus::-moz-range-thumb {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  #ar-details {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -81,6 +177,10 @@
 
   input[type=range]:focus::-moz-range-thumb {
     background: rgba(255, 255, 255, 0.5);
+  }
+
+  #ar-details {
+    display: block;
   }
 
 }
