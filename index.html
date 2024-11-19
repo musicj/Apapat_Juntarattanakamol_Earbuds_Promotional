@@ -4,10 +4,11 @@
     <title>Fluff Earbuds Pro</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet">
   </head>
 <body>
     <header>
+        <h1 class="hidden">Header Menu</h1>
         <div id="menu-container">
             <a href="#" id="logo">Fluff</a>
             <nav>
@@ -45,6 +46,7 @@
     <main>
         <!-- Video banner -->
         <section class="video-container">
+            <h2 class="hidden">Video Banner</h2>
             <video autoplay muted loop playsinline>
                 <source src="videos/banner-promotional.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -55,6 +57,7 @@
 
         <!-- Earbuds Colors -->
         <section class="earbuds-container grid-con">
+            <h2 class="hidden">Earbuds 3 Colors</h2>
             <div class="earbud-card col-start-1">
                 <img src="images/earbud01.png" alt="Earbud White">
                 <p>Frosted Pearl</p>
@@ -76,11 +79,14 @@
         
         <!-- X-RAY -->
         <section class="x-ray grid-con">
+            <h2 class="hidden">Earbuds X-RAY</h2>
                 <section id="title-x-ray">
+                    <h2 class="hidden">Earbuds x-ray title</h2>
                     <p>See-Through The Sound</p>
                 </section>
 
                 <section id="mobile-tablet-view">
+                    <h2 class="hidden">Earbuds x-ray image</h2>
                     <img src="images/earbud-x-ray.jpg" alt="x-ray view of the earbud">
                     <img id="earbud-hidden" src="images/earbud-x-ray-full.jpg" alt="Textured view of earbud">
                 </section>
@@ -93,13 +99,14 @@
                 </div>
 
                 <section id="ar-details">
+                    <h2 class="hidden">Swipe button</h2>
                     <p>swipe the button</p>
                 </section>
         </section>
 
         <!-- Info Boxes -->
         <section class="info-boxes grid-con">
-            <div id="info-boxes">
+            <div id="info-box-con">
               <div class="info-box col-span-full">
                 <img src="images/icon-02.png" alt="Icon 1">
                 <h3>Connectivity</h3>
@@ -126,31 +133,37 @@
         
         <!-- Hotspot -->
         <section>
+            <h2 class="hidden">Hotspot</h2>
             <section id="title-hotspot">
+                <h3 class="hidden">Earbuds hotspot</h3>
                 <p id="title">360° View</p>
                 <p id="details-text">Get Closer to the Details</p>
             </section>                           
 
             <model-viewer id="model" src="model/AR.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
-
                 <button class="Hotspot" slot="hotspot-1" data-position="-0.42107413743910194m 0.6808146615248165m 0.3243634626939538m" data-normal="0.5178562322124313m 0.8507099489914437m -0.09009719998823351m" data-visibility-attribute="visible">
-                    <div id="hotspot-1" class="HotspotAnnotation">
-                    </div>
-                </button><button class="Hotspot" slot="hotspot-2" data-position="-0.1705108752461455m 0.43913510496541214m 0.3945029929560736m" data-normal="0.7558890764682977m 0.5660796825947935m 0.32891563816468444m" data-visibility-attribute="visible">
-                    <div id="hotspot-2" class="HotspotAnnotation">
-                    </div>
-                </button><button class="Hotspot" slot="hotspot-3" data-position="-0.7920317754453975m 0.2537861687257643m 0.4147152606880174m" data-normal="0.3241632100820774m -0.5838014278846413m 0.7443749767618046m" data-visibility-attribute="visible">
-                    <div id="hotspot-3" class="HotspotAnnotation">
-                    </div>
-                </button><button class="Hotspot" slot="hotspot-4" data-position="-0.9696032668007784m 0.36684726169178655m 0.2280620542426444m" data-normal="-0.6282742427010404m 0.7391312492894851m -0.2428095391087409m" data-visibility-attribute="visible">
-                    <div id="hotspot-4" class="HotspotAnnotation">
-                    </div>
-                </button><button class="Hotspot" slot="hotspot-5" data-position="-0.6994404944668656m 0.7657721731736225m 0.5243485386859231m" data-normal="0.32271764760995225m 0.8158930263465732m 0.4797623260325146m" data-visibility-attribute="visible">
-                    <div id="hotspot-5"  class="HotspotAnnotation"> 
-                    </div>
-                </button><button class="Hotspot" slot="hotspot-6" data-position="-0.4345278000295695m 0.4966060562936768m 0.6335268633121973m" data-normal="0.5011943305833986m 0.5137314476754145m 0.6963362999732113m" data-visibility-attribute="visible">
-                    <div id="hotspot-6" class="HotspotAnnotation">
-                    </div>
+                    <span id="hotspot-1" class="HotspotAnnotation">
+                    </span>
+                </button>
+                <button class="Hotspot" slot="hotspot-2" data-position="-0.1705108752461455m 0.43913510496541214m 0.3945029929560736m" data-normal="0.7558890764682977m 0.5660796825947935m 0.32891563816468444m" data-visibility-attribute="visible">
+                    <span id="hotspot-2" class="HotspotAnnotation">
+                    </span>
+                </button>
+                <button class="Hotspot" slot="hotspot-3" data-position="-0.7920317754453975m 0.2537861687257643m 0.4147152606880174m" data-normal="0.3241632100820774m -0.5838014278846413m 0.7443749767618046m" data-visibility-attribute="visible">
+                    <span id="hotspot-3" class="HotspotAnnotation">
+                    </span>
+                </button>
+                <button class="Hotspot" slot="hotspot-4" data-position="-0.9696032668007784m 0.36684726169178655m 0.2280620542426444m" data-normal="-0.6282742427010404m 0.7391312492894851m -0.2428095391087409m" data-visibility-attribute="visible">
+                    <span id="hotspot-4" class="HotspotAnnotation">
+                    </span>
+                </button>
+                <button class="Hotspot" slot="hotspot-5" data-position="-0.6994404944668656m 0.7657721731736225m 0.5243485386859231m" data-normal="0.32271764760995225m 0.8158930263465732m 0.4797623260325146m" data-visibility-attribute="visible">
+                    <span id="hotspot-5" class="HotspotAnnotation">
+                    </span>
+                </button>
+                <button class="Hotspot" slot="hotspot-6" data-position="-0.4345278000295695m 0.4966060562936768m 0.6335268633121973m" data-normal="0.5011943305833986m 0.5137314476754145m 0.6963362999732113m" data-visibility-attribute="visible">
+                    <span id="hotspot-6" class="HotspotAnnotation">
+                    </span>
                 </button>
                 <div class="progress-bar hide" slot="progress-bar">
                     <div class="update-bar"></div>
@@ -159,9 +172,11 @@
                     View in your space
                 </button>
             </model-viewer>
+            
         </section>
 
         <section class="promo-banner-con">
+            <h2 class="hidden">Promotional Banner</h2>
             <img id="promo-dt" src="images/footer-banner.jpg" alt="Desktop Banner">
             <img id="promo-mb" src="images/footer-banner-mobile.jpg" alt="Mobile Banner">
             <img id="promo-tl" src="images/footer-banner-tablet.jpg" alt="Tablet Banner">
@@ -169,7 +184,7 @@
         
 
         <section class="info-boxes">
-            <div id="info-boxes">
+            <div id="info-box-con">
 
               <div class="info-box">
                 <img src="images/icon-04.png" alt="Icon 1">
@@ -187,6 +202,7 @@
         </section>
           
         <section class="wireless-container grid-con">
+            <h2 class="hidden">Wireless Charger</h2>
             <div class="wireless-card col-span-full">
                 <img src="images/Wireless-Charger.png" alt="Wireless Charger">
                 <p>Wireless Charger</p>
@@ -195,6 +211,7 @@
         </section>
         
         <section class="wireless-description">
+            <h2 class="hidden">Tagline</h2>
             <p>Feel the vibe, hear the difference.</p>
             <p> Where style meets sound.</p>
         </section>
