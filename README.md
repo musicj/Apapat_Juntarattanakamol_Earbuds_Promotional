@@ -1,7 +1,7 @@
 # Apapat_Juntarattanakamol_Earbuds_Promotional
 A promotional page showcasing the elegance and innovation of our earbuds through immersive design and interactive experiences.
 
-![Fluff Earbuds Pro](/images/hero-banner.jpg)
+![Fluff Earbuds Pro Midnight Onyx](/images/readme-banner.jpg)
 
 ## Installation
 This is no installatin required at the moment.
