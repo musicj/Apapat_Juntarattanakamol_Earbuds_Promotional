@@ -1,6 +1,8 @@
 # Apapat_Juntarattanakamol_Earbuds_Promotional
 A promotional page showcasing the elegance and innovation of our earbuds through immersive design and interactive experiences.
 
+![Fluff Earbuds Pro](/images/hero-banner.jpg)
+
 ## Installation
 This is no installatin required at the moment.
 
@@ -20,6 +22,7 @@ Open index.html in the browser of your choice.
 - Nov 16th, 2024
 - Nov 17th, 2024
 - Nov 18th, 2024
+- Nov 20th, 2024
 
 ## Credits
 Apapat Juntarattanakamol
