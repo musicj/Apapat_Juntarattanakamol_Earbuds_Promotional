@@ -146,7 +146,7 @@
   images[0].addEventListener("load", render)
 
   function render() {
-      console.log(images[buds.frame]);
+      // console.log(images[buds.frame]);
       context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(images[buds.frame], 0, 0);
   }
